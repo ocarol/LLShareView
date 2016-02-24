@@ -1,0 +1,596 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		121099131C7AC8A000D346CE /* LLShareButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 1210990C1C7AC8A000D346CE /* LLShareButton.m */; };
+		121099141C7AC8A000D346CE /* ShowAlert.m in Sources */ = {isa = PBXBuildFile; fileRef = 1210990E1C7AC8A000D346CE /* ShowAlert.m */; };
+		121099151C7AC8A000D346CE /* LLShareModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 121099101C7AC8A000D346CE /* LLShareModel.m */; };
+		121099161C7AC8A000D346CE /* LLShareView.m in Sources */ = {isa = PBXBuildFile; fileRef = 121099121C7AC8A000D346CE /* LLShareView.m */; };
+		12584CA91C7C0CC8005E4E9D /* libWeChatSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1295EBF81C76FEDB0059A8BD /* libWeChatSDK.a */; };
+		1295EBBB1C76CC150059A8BD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1295EBBA1C76CC150059A8BD /* main.m */; };
+		1295EBBE1C76CC150059A8BD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1295EBBD1C76CC150059A8BD /* AppDelegate.m */; };
+		1295EBC11C76CC150059A8BD /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1295EBC01C76CC150059A8BD /* ViewController.m */; };
+		1295EBC41C76CC150059A8BD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1295EBC21C76CC150059A8BD /* Main.storyboard */; };
+		1295EBC61C76CC150059A8BD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1295EBC51C76CC150059A8BD /* Assets.xcassets */; };
+		1295EBC91C76CC150059A8BD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1295EBC71C76CC150059A8BD /* LaunchScreen.storyboard */; };
+		1295EBD41C76CC160059A8BD /* LLShareViewDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1295EBD31C76CC160059A8BD /* LLShareViewDemoTests.m */; };
+		1295EBDF1C76CC160059A8BD /* LLShareViewDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1295EBDE1C76CC160059A8BD /* LLShareViewDemoUITests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1295EBD01C76CC160059A8BD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1295EBAE1C76CC150059A8BD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1295EBB51C76CC150059A8BD;
+			remoteInfo = LLShareView;
+		};
+		1295EBDB1C76CC160059A8BD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1295EBAE1C76CC150059A8BD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1295EBB51C76CC150059A8BD;
+			remoteInfo = LLShareView;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1210990B1C7AC8A000D346CE /* LLShareButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LLShareButton.h; sourceTree = "<group>"; };
+		1210990C1C7AC8A000D346CE /* LLShareButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LLShareButton.m; sourceTree = "<group>"; };
+		1210990D1C7AC8A000D346CE /* ShowAlert.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShowAlert.h; sourceTree = "<group>"; };
+		1210990E1C7AC8A000D346CE /* ShowAlert.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShowAlert.m; sourceTree = "<group>"; };
+		1210990F1C7AC8A000D346CE /* LLShareModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LLShareModel.h; sourceTree = "<group>"; };
+		121099101C7AC8A000D346CE /* LLShareModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LLShareModel.m; sourceTree = "<group>"; };
+		121099111C7AC8A000D346CE /* LLShareView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LLShareView.h; sourceTree = "<group>"; };
+		121099121C7AC8A000D346CE /* LLShareView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LLShareView.m; sourceTree = "<group>"; };
+		1295EBB61C76CC150059A8BD /* LLShareViewDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LLShareViewDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1295EBBA1C76CC150059A8BD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		1295EBBC1C76CC150059A8BD /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		1295EBBD1C76CC150059A8BD /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		1295EBBF1C76CC150059A8BD /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		1295EBC01C76CC150059A8BD /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		1295EBC31C76CC150059A8BD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		1295EBC51C76CC150059A8BD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1295EBC81C76CC150059A8BD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		1295EBCA1C76CC150059A8BD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1295EBCF1C76CC160059A8BD /* LLShareViewDemo.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LLShareViewDemo.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1295EBD31C76CC160059A8BD /* LLShareViewDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LLShareViewDemoTests.m; sourceTree = "<group>"; };
+		1295EBD51C76CC160059A8BD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1295EBDA1C76CC160059A8BD /* LLShareViewDemo.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LLShareViewDemo.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1295EBDE1C76CC160059A8BD /* LLShareViewDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LLShareViewDemoUITests.m; sourceTree = "<group>"; };
+		1295EBE01C76CC160059A8BD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1295EBF81C76FEDB0059A8BD /* libWeChatSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libWeChatSDK.a; sourceTree = "<group>"; };
+		1295EBF91C76FEDB0059A8BD /* WXApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXApi.h; sourceTree = "<group>"; };
+		1295EBFA1C76FEDB0059A8BD /* WXApiObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXApiObject.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1295EBB31C76CC150059A8BD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				12584CA91C7C0CC8005E4E9D /* libWeChatSDK.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1295EBCC1C76CC160059A8BD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1295EBD71C76CC160059A8BD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		121099091C7AC8A000D346CE /* LLShareView */ = {
+			isa = PBXGroup;
+			children = (
+				1210990A1C7AC8A000D346CE /* LLShareButton */,
+				1210990F1C7AC8A000D346CE /* LLShareModel.h */,
+				121099101C7AC8A000D346CE /* LLShareModel.m */,
+				121099111C7AC8A000D346CE /* LLShareView.h */,
+				121099121C7AC8A000D346CE /* LLShareView.m */,
+			);
+			path = LLShareView;
+			sourceTree = "<group>";
+		};
+		1210990A1C7AC8A000D346CE /* LLShareButton */ = {
+			isa = PBXGroup;
+			children = (
+				1210990B1C7AC8A000D346CE /* LLShareButton.h */,
+				1210990C1C7AC8A000D346CE /* LLShareButton.m */,
+				1210990D1C7AC8A000D346CE /* ShowAlert.h */,
+				1210990E1C7AC8A000D346CE /* ShowAlert.m */,
+			);
+			path = LLShareButton;
+			sourceTree = "<group>";
+		};
+		1295EBAD1C76CC150059A8BD = {
+			isa = PBXGroup;
+			children = (
+				1295EBB81C76CC150059A8BD /* LLShareView */,
+				1295EBD21C76CC160059A8BD /* LLShareViewDemoTests */,
+				1295EBDD1C76CC160059A8BD /* LLShareViewDemoUITests */,
+				1295EBB71C76CC150059A8BD /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		1295EBB71C76CC150059A8BD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1295EBB61C76CC150059A8BD /* LLShareViewDemo.app */,
+				1295EBCF1C76CC160059A8BD /* LLShareViewDemo.xctest */,
+				1295EBDA1C76CC160059A8BD /* LLShareViewDemo.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1295EBB81C76CC150059A8BD /* LLShareView */ = {
+			isa = PBXGroup;
+			children = (
+				1295EBF71C76FEDB0059A8BD /* WeChatSDK */,
+				121099091C7AC8A000D346CE /* LLShareView */,
+				1295EBBC1C76CC150059A8BD /* AppDelegate.h */,
+				1295EBBD1C76CC150059A8BD /* AppDelegate.m */,
+				1295EBBF1C76CC150059A8BD /* ViewController.h */,
+				1295EBC01C76CC150059A8BD /* ViewController.m */,
+				1295EBC21C76CC150059A8BD /* Main.storyboard */,
+				1295EBC51C76CC150059A8BD /* Assets.xcassets */,
+				1295EBC71C76CC150059A8BD /* LaunchScreen.storyboard */,
+				1295EBCA1C76CC150059A8BD /* Info.plist */,
+				1295EBB91C76CC150059A8BD /* Supporting Files */,
+			);
+			name = LLShareView;
+			path = LLShareViewDemo;
+			sourceTree = "<group>";
+		};
+		1295EBB91C76CC150059A8BD /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				1295EBBA1C76CC150059A8BD /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		1295EBD21C76CC160059A8BD /* LLShareViewDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				1295EBD31C76CC160059A8BD /* LLShareViewDemoTests.m */,
+				1295EBD51C76CC160059A8BD /* Info.plist */,
+			);
+			path = LLShareViewDemoTests;
+			sourceTree = "<group>";
+		};
+		1295EBDD1C76CC160059A8BD /* LLShareViewDemoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				1295EBDE1C76CC160059A8BD /* LLShareViewDemoUITests.m */,
+				1295EBE01C76CC160059A8BD /* Info.plist */,
+			);
+			path = LLShareViewDemoUITests;
+			sourceTree = "<group>";
+		};
+		1295EBF71C76FEDB0059A8BD /* WeChatSDK */ = {
+			isa = PBXGroup;
+			children = (
+				1295EBF81C76FEDB0059A8BD /* libWeChatSDK.a */,
+				1295EBF91C76FEDB0059A8BD /* WXApi.h */,
+				1295EBFA1C76FEDB0059A8BD /* WXApiObject.h */,
+			);
+			path = WeChatSDK;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1295EBB51C76CC150059A8BD /* LLShareViewDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1295EBE31C76CC160059A8BD /* Build configuration list for PBXNativeTarget "LLShareViewDemo" */;
+			buildPhases = (
+				1295EBB21C76CC150059A8BD /* Sources */,
+				1295EBB31C76CC150059A8BD /* Frameworks */,
+				1295EBB41C76CC150059A8BD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LLShareViewDemo;
+			productName = LLShareView;
+			productReference = 1295EBB61C76CC150059A8BD /* LLShareViewDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		1295EBCE1C76CC160059A8BD /* LLShareViewDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1295EBE61C76CC160059A8BD /* Build configuration list for PBXNativeTarget "LLShareViewDemoTests" */;
+			buildPhases = (
+				1295EBCB1C76CC160059A8BD /* Sources */,
+				1295EBCC1C76CC160059A8BD /* Frameworks */,
+				1295EBCD1C76CC160059A8BD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1295EBD11C76CC160059A8BD /* PBXTargetDependency */,
+			);
+			name = LLShareViewDemoTests;
+			productName = LLShareViewTests;
+			productReference = 1295EBCF1C76CC160059A8BD /* LLShareViewDemo.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		1295EBD91C76CC160059A8BD /* LLShareViewDemoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1295EBE91C76CC160059A8BD /* Build configuration list for PBXNativeTarget "LLShareViewDemoUITests" */;
+			buildPhases = (
+				1295EBD61C76CC160059A8BD /* Sources */,
+				1295EBD71C76CC160059A8BD /* Frameworks */,
+				1295EBD81C76CC160059A8BD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1295EBDC1C76CC160059A8BD /* PBXTargetDependency */,
+			);
+			name = LLShareViewDemoUITests;
+			productName = LLShareViewUITests;
+			productReference = 1295EBDA1C76CC160059A8BD /* LLShareViewDemo.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1295EBAE1C76CC150059A8BD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = ocarol;
+				TargetAttributes = {
+					1295EBB51C76CC150059A8BD = {
+						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = LCU6SPZP3B;
+					};
+					1295EBCE1C76CC160059A8BD = {
+						CreatedOnToolsVersion = 7.2;
+						TestTargetID = 1295EBB51C76CC150059A8BD;
+					};
+					1295EBD91C76CC160059A8BD = {
+						CreatedOnToolsVersion = 7.2;
+						TestTargetID = 1295EBB51C76CC150059A8BD;
+					};
+				};
+			};
+			buildConfigurationList = 1295EBB11C76CC150059A8BD /* Build configuration list for PBXProject "LLShareViewDemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1295EBAD1C76CC150059A8BD;
+			productRefGroup = 1295EBB71C76CC150059A8BD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1295EBB51C76CC150059A8BD /* LLShareViewDemo */,
+				1295EBCE1C76CC160059A8BD /* LLShareViewDemoTests */,
+				1295EBD91C76CC160059A8BD /* LLShareViewDemoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1295EBB41C76CC150059A8BD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1295EBC91C76CC150059A8BD /* LaunchScreen.storyboard in Resources */,
+				1295EBC61C76CC150059A8BD /* Assets.xcassets in Resources */,
+				1295EBC41C76CC150059A8BD /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1295EBCD1C76CC160059A8BD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1295EBD81C76CC160059A8BD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1295EBB21C76CC150059A8BD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1295EBC11C76CC150059A8BD /* ViewController.m in Sources */,
+				121099131C7AC8A000D346CE /* LLShareButton.m in Sources */,
+				121099141C7AC8A000D346CE /* ShowAlert.m in Sources */,
+				121099151C7AC8A000D346CE /* LLShareModel.m in Sources */,
+				1295EBBE1C76CC150059A8BD /* AppDelegate.m in Sources */,
+				121099161C7AC8A000D346CE /* LLShareView.m in Sources */,
+				1295EBBB1C76CC150059A8BD /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1295EBCB1C76CC160059A8BD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1295EBD41C76CC160059A8BD /* LLShareViewDemoTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1295EBD61C76CC160059A8BD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1295EBDF1C76CC160059A8BD /* LLShareViewDemoUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1295EBD11C76CC160059A8BD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1295EBB51C76CC150059A8BD /* LLShareViewDemo */;
+			targetProxy = 1295EBD01C76CC160059A8BD /* PBXContainerItemProxy */;
+		};
+		1295EBDC1C76CC160059A8BD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1295EBB51C76CC150059A8BD /* LLShareViewDemo */;
+			targetProxy = 1295EBDB1C76CC160059A8BD /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		1295EBC21C76CC150059A8BD /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1295EBC31C76CC150059A8BD /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		1295EBC71C76CC150059A8BD /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1295EBC81C76CC150059A8BD /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1295EBE11C76CC160059A8BD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1295EBE21C76CC160059A8BD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1295EBE41C76CC160059A8BD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = LLShareViewDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/LLShareView/WeChatSDK",
+					"$(PROJECT_DIR)/LLShareViewDemo/WeChatSDK",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ocarol.LLShareView;
+				PRODUCT_NAME = LLShareViewDemo;
+			};
+			name = Debug;
+		};
+		1295EBE51C76CC160059A8BD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = LLShareViewDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/LLShareView/WeChatSDK",
+					"$(PROJECT_DIR)/LLShareViewDemo/WeChatSDK",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ocarol.LLShareView;
+				PRODUCT_NAME = LLShareViewDemo;
+			};
+			name = Release;
+		};
+		1295EBE71C76CC160059A8BD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = LLShareViewDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ocarol.LLShareViewTests;
+				PRODUCT_NAME = LLShareViewDemo;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LLShareViewDemo.app/LLShareViewDemo";
+			};
+			name = Debug;
+		};
+		1295EBE81C76CC160059A8BD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = LLShareViewDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ocarol.LLShareViewTests;
+				PRODUCT_NAME = LLShareViewDemo;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LLShareViewDemo.app/LLShareViewDemo";
+			};
+			name = Release;
+		};
+		1295EBEA1C76CC160059A8BD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = LLShareViewDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ocarol.LLShareViewUITests;
+				PRODUCT_NAME = LLShareViewDemo;
+				TEST_TARGET_NAME = LLShareView;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		1295EBEB1C76CC160059A8BD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = LLShareViewDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ocarol.LLShareViewUITests;
+				PRODUCT_NAME = LLShareViewDemo;
+				TEST_TARGET_NAME = LLShareView;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1295EBB11C76CC150059A8BD /* Build configuration list for PBXProject "LLShareViewDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1295EBE11C76CC160059A8BD /* Debug */,
+				1295EBE21C76CC160059A8BD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1295EBE31C76CC160059A8BD /* Build configuration list for PBXNativeTarget "LLShareViewDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1295EBE41C76CC160059A8BD /* Debug */,
+				1295EBE51C76CC160059A8BD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1295EBE61C76CC160059A8BD /* Build configuration list for PBXNativeTarget "LLShareViewDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1295EBE71C76CC160059A8BD /* Debug */,
+				1295EBE81C76CC160059A8BD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1295EBE91C76CC160059A8BD /* Build configuration list for PBXNativeTarget "LLShareViewDemoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1295EBEA1C76CC160059A8BD /* Debug */,
+				1295EBEB1C76CC160059A8BD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1295EBAE1C76CC150059A8BD /* Project object */;
+}
