@@ -15,7 +15,7 @@
 
 @interface LLShareView()<LLShareButtonDelegate>
 @property (nonatomic, strong) NSArray <LLShareModel *> *shareArray;
-@property (nonatomic, weak)UIView *coverView;
+@property (nonatomic, weak)UIButton *coverView;
 
 @end
 
@@ -30,20 +30,20 @@
 }
 
 - (void)setShareArray:(NSArray<LLShareModel *> *)shareArray {
-
+    
     _shareArray = [shareArray copy];
     [self setupUI];
 }
 
 - (void)setupUI {
-
+    
     CGFloat maxY = -1;
     for (int i = 0; i < self.shareArray.count; i++) {
         LLShareModel *model = self.shareArray[i];
         LLShareButton *shareBtn = [LLShareButton LLShareButtonWithShareModel:model];
         [self addSubview:shareBtn];
         shareBtn.delegate = self;
-//        shareBtn.backgroundColor = RandomColor;
+        //        shareBtn.backgroundColor = [UIColor cyanColor];
         CGFloat btnMAXY = model.btnRect.origin.y + model.btnRect.size.height;
         maxY = maxY > btnMAXY ? maxY : btnMAXY;
     }
@@ -65,17 +65,17 @@
     }
     
     self.backgroundColor = [UIColor whiteColor];
-
+    
 }
 
 - (void)clickCancleBtn {
-
+    
     [self remove:YES];
-
+    
 }
 
 - (void)moveStartFromY1:(CGFloat)y1 ToY2:(CGFloat)y2 finish:(void(^)())finish {
-
+    
     __block typeof(self) myself = self;
     __block CGRect rect = self.frame;
     rect.origin.y = y1;
@@ -87,10 +87,10 @@
         
     } completion:^(BOOL finished) {
         if (finish != nil) {
-             finish();
+            finish();
         }
     }];
-
+    
 }
 
 - (void)showOnView:(UIView *)view {
@@ -103,7 +103,8 @@
     }
     
     if (self.coverView == nil) {
-        UIView *cover = [[UIView alloc] initWithFrame:view.bounds];
+        UIButton *cover = [[UIButton alloc] initWithFrame:view.bounds];
+        [cover addTarget:self action:@selector(clickCancleBtn) forControlEvents:UIControlEventTouchUpInside];
         cover.backgroundColor = [UIColor blackColor];
         cover.alpha = 0.5f;
         [view addSubview:cover];
@@ -118,7 +119,7 @@
     [self moveStartFromY1:startY ToY2:endY finish:nil];
     
     
-   
+    
 }
 
 - (void)LLShareButtonDidClick:(LLShareButton *)LLShareButton {
@@ -132,13 +133,21 @@
     UIWindow *window = [[UIApplication sharedApplication] keyWindow];
     UIView *topView = window.subviews[0];
     [self showOnView:topView];
-  
+    
 }
 
 - (void)hidden {
+    self.hidden = YES;
+    self.coverView.hidden = YES;
+}
 
-    [self hiddenWithFinish:nil];
-
+- (void)hidden:(BOOL)animated {
+    
+    if (animated == YES) {
+        [self hiddenWithFinish:nil];
+    }else {
+        [self hidden];
+    }
 }
 
 - (void)hiddenWithFinish:(void(^)())finish {

@@ -23,6 +23,7 @@
 - (void)show;
 - (void)showOnView:(UIView *)view;
 - (void)hidden;
+- (void)hidden:(BOOL)animated;
 - (void)hiddenWithFinish:(void(^)())finish;
 - (void)remove:(BOOL)animated;
 @end

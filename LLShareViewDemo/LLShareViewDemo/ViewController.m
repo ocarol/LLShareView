@@ -94,7 +94,7 @@
 
 
 -(void)LLShareButtonDidClick {
-    [self.shareView remove:NO];
+    [self.shareView hidden:NO];
 }
 
 @end

@@ -260,7 +260,6 @@
 				TargetAttributes = {
 					1295EBB51C76CC150059A8BD = {
 						CreatedOnToolsVersion = 7.2;
-						DevelopmentTeam = LCU6SPZP3B;
 					};
 					1295EBCE1C76CC160059A8BD = {
 						CreatedOnToolsVersion = 7.2;
