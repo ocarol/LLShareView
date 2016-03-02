@@ -27,4 +27,5 @@ typedef enum : NSUInteger {
 @property (nonatomic, copy) NSString *btnTitle;
 @property (nonatomic, strong) UIImage *btnImg;
 
++ (LLShareModel *)LLShareModelWithindex:(int)index total:(int) total Type:(LLShareType)shareType ButtonTitle:(NSString *)btntitle ButtonImage:(UIImage*)btnImg ShareTitle:(NSString *)shareTitle ShareDescription:(NSString *)shareDescription ShareThumbImage:(UIImage *)shareimage WebpageUrl:(NSString *)webpageUrl;
 @end
