@@ -3,7 +3,7 @@
 //  LLShareView
 //
 //  Created by ocarol on 16/2/19.
-//  Copyright © 2016年 Botpy. All rights reserved.
+//  Copyright © 2016年  All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
